@@ -1,13 +1,14 @@
 # import re
 
 def isPalindrome(text):
-	i = 0	
-
-	while i < len(text):
-		if text[i] != text[-1 - i]:
-			return False
-		i += 1
-	return True
+    i = 0	
+        
+    while i < len(text) // 2:
+        # print(text, text[i], text[-1 - i])
+        if text[i] != text[-1 - i]:
+            return False
+        i += 1
+    return True
 
 def clean_text(text):
     """
