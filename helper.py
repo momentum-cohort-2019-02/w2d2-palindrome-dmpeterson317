@@ -1,7 +1,7 @@
 # import re
 
 def isPalindrome(text):
-	i = 0
+	i = 0	
 
 	while i < len(text):
 		if text[i] != text[-1 - i]:
