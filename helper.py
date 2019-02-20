@@ -2,13 +2,12 @@
 
 def isPalindrome(text):
 	i = 0
-	isPal = True
 
-	while isPal == True and i < len(text):
+	while i < len(text):
 		if text[i] != text[-1 - i]:
 			return False
 		i += 1
-		return True
+	return True
 
 def clean_text(text):
     """

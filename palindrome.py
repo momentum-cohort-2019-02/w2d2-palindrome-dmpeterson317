@@ -3,12 +3,12 @@ import helper
 def main():
 
 	userInput = input("Enter one or more sentences: ")
-	# breakpoint()
+
 	text = helper.clean_text(userInput)
 	if helper.isPalindrome(text): 
-		print("Y")
+		print("is a palindrome")
 	else:
-		print("N")
+		print("is not a palindrome")
 
 if __name__ == "__main__":
 	main()
